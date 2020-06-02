@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
 import App from './app.js';
 
 const Main = props => {
-  <React.Fragment>
+  <Provider>
     <App />
-  </React.Fragment>
+  </Provider>
 }
 
 ReactDOM.render(<Main />, document.getElementById('root'));
